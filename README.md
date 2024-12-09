@@ -19,7 +19,8 @@ The details of hardware and software configurations are listed in the following 
   ----|----|----|
   RAN/eNB|Intel i7-8559U|OpenAirInterface (OAI)|
   EPC|Intel i7-8559U|Openair-cn|
-  MEC server|Intel i7-8559U|Edgegallery|
+  RIC|Intel i7-8559U|Edgegallery|
+  WebRTC server|Intel i9-9980HK|WebRTC|
   Radio Frequency Front-End|Ettus USRP B210|N/A|
   UEs|6×Huawei Nexus 6P|Android 8.0|
   
