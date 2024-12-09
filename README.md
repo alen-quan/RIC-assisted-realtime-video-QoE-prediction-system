@@ -46,6 +46,13 @@ To generate datasets for different wireless environments, we have done the follo
   * Secondly, we switch the commercial UEs from airplane mode to non-airplane mode. The UEs are connected to the cellular network as shown in the figure below.
   * Thirdly, The UE receives and plays real-time video from the WebRTC server, and the video bit rate is automatically selected according to the network status.
   * Fourthly, the RIC server collects the RAN information through the flexRAN feedback during the $t$-th transmission period and saves them to the dataset according to a certain format. And WebRTC server records real-time video QOE-related information and generates datasets to send to the RIC. The details of RAN information are listed in the following table.
+ <div align="center">
+  
+   <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 2. UE connected to cellular network illustration.png"  width ="400"  alt="illustration">
+  
+   </div>
+   
+   <p align="center">Fig. 2. The snapshoot of UE connected to cellular network illustration.</p>
 
 The data set collected in the above steps will be trained and tested on the RIC. 
 
