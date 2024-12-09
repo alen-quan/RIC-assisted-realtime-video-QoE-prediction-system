@@ -10,7 +10,7 @@ The system can interconnect with commercial User Equipment (UE) and provide them
 
 <div align="center">
   
-  <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 1. Experimental Environment.PNG" width ="600" alt="Environment">
+  <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 1. Experimental Environment.png" width ="600" alt="Environment">
   <p align="center">Fig. 1. The snapshot of the RIC-assisted wireless communication system.</p>
   
    </div>
