@@ -59,7 +59,7 @@ The data training process is performed on the RIC using the Pytorch platform. Wh
 In Figure 3 and Table 3, we have shown the comparison between the predicted results of the proposed scheme and the real values, as well as the performance comparison with the baseline algorithm.As shown in Table 3, the Transformer based prediction algorithm proposed in this paper has better MAE than the baseline algorithm under the three QoE defined indicators, and tt also performed well in the E<sub>50</sub> and E<sub>90</sub>.
 <div align="center">
   
-<img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 3. The predicted QoE value versus the ground-truth QoE value.png"  width ="800" alt="Fig. 3. The predicted QoE value versus the ground-turth QoE value">
+<img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 3. The predicted QoE value versus the ground-truth QoE value.png"  width ="600" alt="Fig. 3. The predicted QoE value versus the ground-turth QoE value">
 
  </div>
 <p align="center">Fig. 3. The predicted QoE value versus the ground-turth QoE value.</p>
@@ -81,3 +81,10 @@ In Figure 3 and Table 3, we have shown the comparison between the predicted resu
 </div>
 
 We also plotted the CDF of the absolute prediction error of the proposed scheme, as shown in Fig 4. Compared with the baseline algorithm, the absolute error of the TTPP algorithm proposed in this paper is reduced by 34.75 maximum and increased by 56.6%. In addition, below the 70th percentile, the CDF curve of the TTPP algorithm overlaps between the data enhancement method and the non-data enhancement method, while above the 70th percentile, the CDF curve of the TTPP algorithm with data enhancement shows better performance. The results show that data enhancement methods have performance advantages over non-data enhancement methods at higher percentiles.
+<div align="center">
+  
+<img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 4. CDF of absolute errors.png" width ="600"  alt="Fig. 4. CDF of absolute errors">
+
+</div>
+
+<p align="center">Fig. 4. CDF of absolute errors for different prediction schemes.</p>
