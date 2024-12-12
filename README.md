@@ -6,11 +6,11 @@ This is the Github repository which provides a detailed introduction to the expe
 ## Experimental environment
 Our proposed prediction scheme has been tested on our prototype communication platform based on OpenAirInterface (OAI) and a real-time video transmission platform based on Web Real-Time Communication (WebRTC). The communication platform consists of a software-defined Evolved Packet Core (EPC) and Radio Access Network (RAN), a RIC platform, a Radio Frequency Front-end (USRP) B210, and commercial User Equipment (UE). The real-time video transmission platform is composed of a server and client side, as illustrated in the figure below.
 
-The system can interconnect with commercial User Equipment (UE) and provide them with a cellular network for data transmission. The UE receives video sent by the video server and obtains Quality of Experience (QoE) related information from the server. Concurrently, it can acquire bandwidth-related Radio Access Network (RAN) information from the RAN side through the Mobile Edge Computing (MEC) server and generate datasets.
+The system can interconnect with commercial User Equipment (UE) and provide them with a cellular network for data transmission. The UE receives video sent by the video server and obtains Quality of Experience (QoE) related information from the server. Concurrently, it can acquire bandwidth-related Radio Access Network (RAN) information from the RAN side through the RAN intelligent controller(RIC) server and generate datasets.
 
 <div align="center">
   
-  <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 1. Experimental Environment.jpg" width ="600" alt="Environment">
+  <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 1. Experimental Environment.jpg" width ="700" alt="Environment">
   <p align="center">Fig. 1. The snapshot of the RIC-assisted wireless communication system.</p>
   
    </div>
@@ -26,7 +26,7 @@ The details of hardware and software configurations are listed in the following 
   ----|----|----|
   RAN/eNB|Intel i7-8559U|OpenAirInterface (OAI)|
   EPC|Intel i7-8559U|Openair-cn|
-  RIC|Intel i7-8559U|Edgegallery|
+  RIC|Intel i9-9980HK|Edgegallery|
   WebRTC server|Intel i9-9980HK|WebRTC|
   Radio Frequency Front-End|Ettus USRP B210|N/A|
   UEs|6×Huawei Nexus 6P|Android 8.0|
