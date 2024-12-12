@@ -10,7 +10,7 @@ The system can interconnect with commercial User Equipment (UE) and provide them
 
 <div align="center">
   
-  <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 1. Experimental Environment.png" width ="600" alt="Environment">
+  <img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 1. Experimental Environment.jpg" width ="600" alt="Environment">
   <p align="center">Fig. 1. The snapshot of the RIC-assisted wireless communication system.</p>
   
    </div>
@@ -79,3 +79,5 @@ In Figure 3 and Table 3, we have shown the comparison between the predicted resu
 | **TTPP (ours)**  | **46.39**        | **26.61**                    | **106.88**                   | **0.163**         | 0.107                        | **0.232**                    | **1.514**          | 1.171                        | **2.837**                    | **4.26 ms**       |
 
 </div>
+
+We also plotted the CDF of the absolute prediction error of the proposed scheme, as shown in Fig 4. Compared with the baseline algorithm, the absolute error of the TTPP algorithm proposed in this paper is reduced by 34.75 maximum and increased by 56.6%. In addition, below the 70th percentile, the CDF curve of the TTPP algorithm overlaps between the data enhancement method and the non-data enhancement method, while above the 70th percentile, the CDF curve of the TTPP algorithm with data enhancement shows better performance. The results show that data enhancement methods have performance advantages over non-data enhancement methods at higher percentiles.
