@@ -56,4 +56,26 @@ The data training process is performed on the RIC using the Pytorch platform. Wh
 
 ## Experimental Result
 
-In Figure 3 and Table 3, we have shown the comparison between the predicted results of the proposed scheme and the real values, as well as the performance comparison with the baseline algorithm.
+In Figure 3 and Table 3, we have shown the comparison between the predicted results of the proposed scheme and the real values, as well as the performance comparison with the baseline algorithm.As shown in Table 3, the Transformer based prediction algorithm proposed in this paper has better MAE than the baseline algorithm under the three QoE defined indicators, and tt also performed well in the E<sub>50</sub> and E<sub>90</sub>.
+<div align="center">
+  
+<img src="https://github.com/alen-quan/RIC-assisted-realtime-video-QoE-prediction-system/blob/main/Fig 3. The predicted QoE value versus the ground-truth QoE value.png"  width ="800" alt="Fig. 3. The predicted QoE value versus the ground-turth QoE value">
+
+ </div>
+<p align="center">Fig. 3. The predicted QoE value versus the ground-turth QoE value.</p>
+  <p align="center">Table III   Performance Comparison among Different Prediction Algorithms</p>
+
+<div align="center">
+  
+### Performance Analysis of Different Algorithms
+
+| **Method**       | **QoE-OnRL MAE** | **QoE-OnRL E<sub>50</sub>** | **QoE-OnRL <br>E<sub>90</sub>** | **QoE-Loki MAE** | **QoE-Loki <br>E<sub>50</sub>** | **QoE-Loki <br>E<sub>90</sub>** | **QoE-R3Net MAE** | **QoE-R3Net E<sub>50</sub>** | **QoE-R3Net E<sub>90</sub>** | **Running Time** |
+|------------------|------------------|------------------------------|------------------------------|-------------------|------------------------------|------------------------------|--------------------|------------------------------|------------------------------|-------------------|
+| RF               | 56.89            | 37.23                        | 122.87                       | 0.227             | 0.169                        | 0.415                        | 1.772              | 1.341                        | 3.388                        | **0.14 ms**       |
+| SVR              | 82.88            | 61.36                        | 163.89                       | 0.657             | 0.635                        | 0.855                        | 2.052              | 1.702                        | 3.757                        | **0.21 ms**       |
+| DNN              | 55.32            | 31.43                        | 137.74                       | 0.233             | 0.139                        | 0.552                        | 1.618              | 1.215                        | 3.086                        | **0.59 ms**       |
+| CNN-LSTM         | 53.02            | 29.85                        | 127.37                       | 0.214             | 0.133                        | 0.509                        | 1.555              | **1.152**                    | 3.086                        | **3.93 ms**       |
+| TTPP, w/o aug    | 55.13            | 27.08                        | 138.28                       | 0.184             | **0.106**                    | 0.285                        | 1.616              | 1.176                        | 3.295                        | **4.30 ms**       |
+| **TTPP (ours)**  | **46.39**        | **26.61**                    | **106.88**                   | **0.163**         | 0.107                        | **0.232**                    | **1.514**          | 1.171                        | **2.837**                    | **4.26 ms**       |
+
+</div>
