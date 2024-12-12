@@ -34,7 +34,7 @@ The details of hardware and software configurations are listed in the following 
   </div>
   
 ## Data Collection
-  we collect datasets under  different transmission conditions based on the RIC-assisted realtime-video QoE prediction system.Specifically, we change the state of the wireless network through the movement of ue in the region.
+  We collect datasets under  different transmission conditions based on the RIC-assisted realtime-video QoE prediction system.Specifically, we change the state of the wireless network through the movement of ue in the region.
 ### Process 
 
 To generate datasets for different wireless environments, we have done the following implementation work. 
@@ -52,7 +52,7 @@ To generate datasets for different wireless environments, we have done the follo
 
 The data set collected in the above steps will be trained and tested on the RIC. 
 
-The data training process is performed on the RIC using the Pytorch platform. When the offline training process is complete, the video stream QoE prediction model is hosted on the RIC. The proposed prediction scheme and baseline prediction scheme obtain the RAN context measurement results and video QoE information of the previous $t_p$ = 4 transmission cycles, and predict the video stream QoE of the next transmission cycle.
+The data training process is performed on the RIC using the Pytorch platform. When the offline training process is complete, the video stream QoE prediction model is hosted on the RIC. The proposed prediction scheme and baseline prediction scheme obtain the RAN context measurement results and video QoE information of the previous $t_h$ = 6 transmission cycles, and predict the video stream QoE of the next transmission cycle.
 
 ## Experimental Result
 
