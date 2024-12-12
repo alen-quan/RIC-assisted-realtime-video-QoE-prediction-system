@@ -1,5 +1,5 @@
 # RIC-assisted-realtime-video-QoE-prediction-system
-## It's a test 
+## Introduction 
 _Y. Sun, W. Xiong, G. Pan,S. Xu, S. Zhang and X. Chen.QoE Prediction in RIC-assisted Wireless Real-time Video Transmission System with Transformer, Submitted to IEEE Transactions on Vehicular Technology._
 
 This is the Github repository which provides a detailed introduction to the experimental environment and data acquisition process of this letter. The main aim of the repository is to present our RIC-assisted realtime video QoE prediction system, discuss and report issues. This demo showcases the architecture of the system and the process of obtaining data. All the experiments mentioned in the letter are based on the datasets collected on the prototype platform. 
@@ -34,17 +34,13 @@ The details of hardware and software configurations are listed in the following 
   </div>
   
 ## Data Collection
-  we collect datasets under the following three different transmission conditions based on the edge-assisted wireless communication system.
-  ### Configuration Cases
-  * Case1: The UE is close to the usrp, and the wireless network status is good.
-  * Case2: The UE is far away from the usrp, and the wireless network status is poor
-  * Case3: The UE is far away from the usrp, and the wireless network status is good and bad
+  we collect datasets under  different transmission conditions based on the RIC-assisted realtime-video QoE prediction system.Specifically, we change the state of the wireless network through the movement of ue in the region.
 ### Process 
 
 To generate datasets for different wireless environments, we have done the following implementation work. 
   * Firstly, we open the OAI system, including eNB and EPC (three core network elements, i.e., MME, HSS and SPGW). 
   * Secondly, we switch the commercial UEs from airplane mode to non-airplane mode. The UEs are connected to the cellular network as shown in the figure below.
-  * Thirdly, The UE receives and plays real-time video from the WebRTC server, and the video bit rate is automatically selected according to the network status.
+  * Thirdly, The UE receives and plays real-time video from the WebRTC server, and the video bitrate is automatically selected according to the network status.
   * Fourthly, the RIC server collects the RAN information through the flexRAN feedback during the $t$-th transmission period and saves them to the dataset according to a certain format. And WebRTC server records real-time video QOE-related information and generates datasets to send to the RIC. The details of RAN information are listed in the following table.
  <div align="center">
   
@@ -59,3 +55,5 @@ The data set collected in the above steps will be trained and tested on the RIC.
 The data training process is performed on the RIC using the Pytorch platform. When the offline training process is complete, the video stream QoE prediction model is hosted on the RIC. The proposed prediction scheme and baseline prediction scheme obtain the RAN context measurement results and video QoE information of the previous $t_p$ = 4 transmission cycles, and predict the video stream QoE of the next transmission cycle.
 
 ## Experimental Result
+
+In Figure 3 and Table 3, we have shown the comparison between the predicted results of the proposed scheme and the real values, as well as the performance comparison with the baseline algorithm.
